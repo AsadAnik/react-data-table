@@ -1,14 +1,4 @@
-
-<!--lint disable awesome-heading awesome-github awesome-toc double-link -->
-
-<p align="center">
-  <br>
-  <img width="400" src="./assets/logo.svg" alt="logo of awesome-vite repository">
-  <br>
-  <br>
-</p>
-
-<h2 align='center'>Awesome Vite.js</h2>
+<h2 align='center'>Awesome Vite</h2>
 
 <p align='center'>
 A curated list of awesome things related to <a href='https://github.com/vitejs/vite'>Vite.js</a>
