@@ -1,0 +1,100 @@
+{
+    "desserts": [
+        {
+            "id": "1",
+            "name": "Frozen Yoghurt",
+            "calory": 159,
+            "fat": 6,
+            "carbs": 24,
+            "protein": 4
+        },
+        {
+            "id": "2",
+            "name": "Ice Cream Sandwich",
+            "calory": 170,
+            "fat": 10,
+            "carbs": 22,
+            "protein": 3
+        },
+        {
+            "id": "3",
+            "name": "Eclair",
+            "calory": 159,
+            "fat": 7,
+            "carbs": 22,
+            "protein": 5
+        },
+        {
+            "id": "4",
+            "name": "Mashroom",
+            "calory": 200,
+            "fat": 5,
+            "carbs": 30,
+            "protein": 7
+        },
+        {
+            "id": "5",
+            "name": "Mashmallow",
+            "calory": 220,
+            "fat": 8,
+            "carbs": 32,
+            "protein": 10
+        },
+        {
+            "id": "6",
+            "name": "Apple Juice",
+            "calory": 222,
+            "fat": 4,
+            "carbs": 20,
+            "protein": 5
+        },
+        {
+            "id": "7",
+            "name": "Frozen",
+            "calory": 159,
+            "fat": 5,
+            "carbs": 23,
+            "protein": 3
+        },
+        {
+            "id": "8",
+            "name": "Yoghurt",
+            "calory": 140,
+            "fat": 8,
+            "carbs": 27,
+            "protein": 5
+        },
+        {
+            "id": "9",
+            "name": "Cupcake",
+            "calory": 205,
+            "fat": 10,
+            "carbs": 18,
+            "protein": 3
+        },
+        {
+            "id": "10",
+            "name": "Chicken Bread",
+            "calory": 250,
+            "fat": 15,
+            "carbs": 20,
+            "protein": 8
+        },
+        {
+            "id": "11",
+            "name": "Veef",
+            "calory": 250,
+            "fat": 5,
+            "carbs": 30,
+            "protein": 20
+        },
+        {
+            "id": "12",
+            "name": "Burger",
+            "calory": 159,
+            "fat": 8,
+            "carbs": 25,
+            "protein": 5
+        }
+    ]
+}
