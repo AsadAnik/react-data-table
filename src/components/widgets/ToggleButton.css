@@ -35,21 +35,21 @@
     width: 50%;
     height: 36px;
     padding: 0;
-    line-height: 36px;
+    /* line-height: 36px; */
     color: #fff;
     font-weight: bold;
     box-sizing: border-box;
 }
 
 .inner:before {
-    content: "YES";
+    content: "ON";
     padding-left: 10px;
-    background-color: #060;
+    background-color: #424242;
     color: #fff;
 }
 
 .inner:after {
-    content: "NO";
+    content: "OFF";
     padding-right: 10px;
     background-color: #bbb;
     color: #fff;

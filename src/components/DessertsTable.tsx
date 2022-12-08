@@ -12,6 +12,8 @@ const DessertsTable = () => {
     const [desserts] = useFetch(`${BASE_URL}/desserts`);
     const [search, setSearch] = useState("");
     const [filteredDeserts, setFilteredDeserts] = useState([]);
+    const [darkTheme, setTheme] = useState(false);
+    const [denseMode, setDenseMode] = useState(false);
 
     // Make Effect when changes Search keys..
     useEffect(() => {
@@ -24,7 +26,7 @@ const DessertsTable = () => {
     // Data Tables Columns..
     const columns = [
         {
-            name: 'Desserts',
+            name: 'Desserts (100g serving)',
             selector: (row: any) => row.name,
             sortable: true,
         },
@@ -34,17 +36,17 @@ const DessertsTable = () => {
             sortable: true,
         },
         {
-            name: 'Fat',
+            name: 'Fat (g)',
             selector: (row: any) => row.fat,
             sortable: true,
         },
         {
-            name: 'Carbs',
+            name: 'Carbs (g)',
             selector: (row: any) => row.carbs,
             sortable: true,
         },
         {
-            name: 'Protein',
+            name: 'Protein (g)',
             selector: (row: any) => row.protein,
             sortable: true,
         },
@@ -61,13 +63,17 @@ const DessertsTable = () => {
         // }
     ];
 
+    // console.log(darkTheme);
+
     // Returning Statement..
     return (
         <div>
-            <div style={{ padding: 10 }}>
-                <button onClick={() => alert('Hi')}>
-                    <ToggleButton label="Theme" />
-                </button>
+            <div style={{ padding: 10, marginLeft: '80%' }}>
+                <ToggleButton
+                    label="Theme"
+                    onClick={() => setTheme(!darkTheme)}
+                    height={25}
+                />
             </div>
 
             <DataTable
@@ -88,9 +94,18 @@ const DessertsTable = () => {
                         onChange={(event) => setSearch(event.target.value)}
                     />
                 }
-                dense
-                theme="dark"
+                dense={denseMode}
+                // theme="dark"
+                theme={!darkTheme ? "light" : "dark"}
             />
+
+            <div style={{ padding: 10 }}>
+                <ToggleButton
+                    label="Dense Padding"
+                    onClick={() => setDenseMode(!denseMode)}
+                    height={25}
+                />
+            </div>
         </div>
     );
 };
