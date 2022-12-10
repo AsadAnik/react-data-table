@@ -105,7 +105,7 @@ Use the "Table of Contents" menu on the top-left corner to explore the list.
 
 - [vite-plugin-react-inspector](https://github.com/sudongyuer/vite-plugin-react-inspector) - Jump to local IDE source code while click the element of browser.
 
-### React
+### React CRA Migration Guide
 
 - [CRA migration guide](https://github.com/nordcloud/pat-frontend-template/blob/master/docs/CRA_MIGRATION_GUIDE.md) - A step-by-step guide for migrating a project from Create React App.
 
