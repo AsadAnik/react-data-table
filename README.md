@@ -1,5 +1,16 @@
 <h2 align='center'>React Data Table</h2>
 
+## To Get Start On Local Machine.
+### To Start Dev Server.
+```
+npm run dev
+```
+
+### To Start JSON-Server for Data.
+```
+npm run json-serve
+```
+
 <p align='center'>
 A curated list of awesome things related to <a href='https://github.com/vitejs/vite'>Vite.js</a>
 <br><br>
