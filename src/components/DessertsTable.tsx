@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import DataTable from 'react-data-table-component';
 import useFetch from '../hooks/useFetch';
 import ToggleButton from './widgets/ToggleButton';
+import { AiOutlineArrowDown } from 'react-icons/Ai';
 
 // Base URL...
 const BASE_URL: string = "http://localhost:4000";
@@ -97,6 +98,7 @@ const DessertsTable = () => {
                 dense={denseMode}
                 // theme="dark"
                 theme={!darkTheme ? "light" : "dark"}
+                sortIcon={ <AiOutlineArrowDown /> }
             />
 
             <div style={{ padding: 10 }}>
