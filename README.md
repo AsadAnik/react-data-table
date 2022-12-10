@@ -1,6 +1,11 @@
 <h2 align='center'>React Data Table</h2>
 
 ## To Get Start On Local Machine.
+### Installing App.
+```
+npm install
+```
+
 ### To Start Dev Server.
 ```
 npm run dev
