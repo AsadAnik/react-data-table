@@ -12,14 +12,14 @@ const DessertsTable = () => {
     // Using our custom hook..
     const [desserts] = useFetch(`${BASE_URL}/desserts`);
     const [search, setSearch] = useState("");
-    const [filteredDeserts, setFilteredDeserts] = useState([]);
+    const [filteredDeserts, setFilteredDeserts] = useState<any[]>([]);
     const [darkTheme, setTheme] = useState(false);
     const [denseMode, setDenseMode] = useState(false);
 
     // Make Effect when changes Search keys..
     useEffect(() => {
-        if (desserts.length > 0) {
-            const results = desserts.filter(dessert => dessert?.name.toLowerCase().match(search.toLocaleLowerCase()));
+        if (desserts.length > 1) {
+            const results = desserts.filter(dessert => dessert.name.toLowerCase().match(search.toLocaleLowerCase()));
             setFilteredDeserts(results);
         }
     }, [search]);
@@ -73,7 +73,6 @@ const DessertsTable = () => {
                 <ToggleButton
                     label="Theme"
                     onClick={() => setTheme(!darkTheme)}
-                    height={25}
                 />
             </div>
 
@@ -105,7 +104,6 @@ const DessertsTable = () => {
                 <ToggleButton
                     label="Dense Padding"
                     onClick={() => setDenseMode(!denseMode)}
-                    height={25}
                 />
             </div>
         </div>
